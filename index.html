@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Rojnamcha">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+  <title>rojnamcha</title>
+</head>
+<body>
+  <main class="app">
+    <header>
+      <h1>रोजनामचा</h1>
+      <p>Daily entries</p>
+    </header>
+
+    <section class="card">
+      <h2>नई एंट्री</h2>
+      <form id="entryForm">
+        <input id="date" type="date" required>
+        <input id="title" type="text" placeholder="एंट्री का नाम / विवरण" required>
+        <textarea id="note" placeholder="विवरण लिखें..."></textarea>
+        <input id="amount" type="number" step="0.01" min="0" placeholder="रकम (वैकल्पिक)">
+        <button type="submit">सेव करें</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <div class="row">
+        <h2>एंट्री</h2>
+        <button id="clearBtn" class="danger small">सभी हटाएँ</button>
+      </div>
+      <input id="search" type="search" placeholder="एंट्री खोजें...">
+      <div id="entries"></div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

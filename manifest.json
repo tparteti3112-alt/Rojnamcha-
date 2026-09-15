@@ -1,0 +1,11 @@
+{
+  "background_color": "#ffffff",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "rojnamcha",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "rojnamcha",
+  "start_url": "/",
+  "theme_color": "#ffffff"
+}
